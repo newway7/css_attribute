@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+.father{
+    position: relative;padding:20px;
+    background:blueviolet;
+    margin:30px;
+    border:10px solid red;
+
+}
+
+        .positioned {
+            position: absolute;
+            background: yellow;
+            top: 0;
+            left: 0;
+        }
+        .height{
+            height:1000px;
+           
+           background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+<div class="father">
+    <div class="positioned">
+        这是一个绝对定位的元素，它脱离文档流，绝对元素相对于它最近的非静态定位元素border内边界定位。
+    </div>
+    <div class="height">
+        1111
+        </div>
+</div>
+
+</body>
+
+</html>

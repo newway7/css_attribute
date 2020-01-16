@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+  box-sizing: border-box;
+}
+.father{
+     /* overflow:scroll; */
+    background-color: thistle;
+    
+}
+dl > div {
+  background: #FFF;
+  padding: 24px 0 0 0;
+
+}
+
+dt {
+  background: #B8C1C8;
+  border-bottom: 1px solid #989EA4;
+  border-top: 1px solid #717D85;
+  color: #FFF;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+dd {
+  font: bold 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid #CCC;
+}
+    </style>
+</head>
+
+<body>
+    <div class='father'>
+        <dl>
+            <div>
+              <dt>A</dt>
+              <dd>Andrew W.K.</dd>
+              <dd>Apparat</dd>
+              <dd>Arcade Fire</dd>
+              <dd>At The Drive-In</dd>
+              <dd>Aziz Ansari</dd>
+            </div>
+            <div>
+              <dt>C</dt>
+              <dd>Chromeo</dd>
+              <dd>Common</dd>
+              <dd>Converge</dd>
+              <dd>Crystal Castles</dd>
+              <dd>Cursive</dd>
+            </div>
+            <div>
+              <dt>E</dt>
+              <dd>Explosions In The Sky</dd>
+            </div>
+            <div>
+              <dt>T</dt>
+              <dd>sticky达到阈值的时候，文档流依然保持占位，同时展现出fixed的特性。安卓6.0个别机型不支持sticky</dd>
+              <dd>父级元素设置overflow:visible以外的值，没有粘滞效果。</dd>
+              <dd>如果父元素有设置height，sticky元素只在父元素height范围内有效，如果父元素height高度低于sticky元素sticky元素没有粘滞效果</dd>
+              <dd></dd>
+              <dd>Two Gallants</dd>
+            </div>
+          </dl> 
+    </div>
+     
+</body>
+</html>
