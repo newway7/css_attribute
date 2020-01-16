@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     div{
+         min-width: 400px;
+         max-width: 200px; 
+         width: 300px !important;
+         background:thistle;
+     }
+    </style>
+</head>
+<body>
+    <div>
+       min-width的值大于!important的时候，以min-width为准，即min-width优先级更高，必须先满足min-width；
+       min-width的优先级高于max-width；
+    </div>
+</body>
+</html>
